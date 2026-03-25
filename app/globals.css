@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-space: #0C0C0C;
+  --color-electric-cyan: #00F2FF;
+  --color-hyper-violet: #9D00FF;
+
+  --animate-pulse-glow: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-gradient-shift: gradient-shift 8s ease infinite;
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      filter: drop-shadow(0 0 10px var(--color-electric-cyan));
+    }
+    50% {
+      opacity: .7;
+      filter: drop-shadow(0 0 20px var(--color-hyper-violet));
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --background: #0C0C0C;
+    --foreground: #ffffff;
+  }
+  
+  html {
+    background-color: var(--background);
+    color: var(--foreground);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-hyper-violet);
+    color: #fff;
+  }
+}
+
+.glass-panel {
+  background: rgba(12, 12, 12, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5), 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.bg-gradient-pulse {
+  background: linear-gradient(-45deg, #0C0C0C, #1a0b2e, #0C0C0C, #003336);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Hide default cursor to use custom cursor */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, input, textarea, select {
+    cursor: none;
+  }
+}
