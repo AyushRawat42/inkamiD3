@@ -72,6 +72,16 @@ export default function ContactPage() {
               </label>
             </div>
             <div className="relative group">
+              <label htmlFor="service" className="absolute left-0 top-4 text-gray-500 transition-all text-sm">Select Service</label>
+              <select id="service" name="service" className="mt-6 block w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-electric-cyan">
+                <option value="bpo">BPO Services</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="it">IT Services</option>
+                <option value="education">IT Education</option>
+                <option value="other">General Inquiry</option>
+              </select>
+            </div>
+            <div className="relative group">
               <textarea 
                 id="message" 
                 required 

@@ -59,13 +59,13 @@ export default function DigitalMarketingPage() {
         </div>
       }
       heroTitle={
-        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet drop-shadow-[0_0_30px_rgba(157,0,255,0.3)]">
-          Digital Marketing
+        <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet">
+          Digital marketing built for visibility, leads, and growth.
         </h1>
       }
       heroDescription={
-        <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-          Dominate your market with algorithmic precision. We leverage predictive data models and IP-targeted omnichannel campaigns to drive exponential, measurable growth.
+        <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+          Inkami helps businesses build stronger digital presence through strategy, content, paid campaigns, SEO, and conversion-focused execution.
         </p>
       }
       stages={marketingStages}

@@ -18,6 +18,8 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
     { name: 'IT Solutions', href: '/it-solutions' },
     { name: 'BPO Services', href: '/bpo-services' },
     { name: 'Digital Marketing', href: '/digital-marketing' },

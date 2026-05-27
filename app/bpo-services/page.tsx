@@ -53,13 +53,13 @@ export default function BPOServicesPage() {
     <IPPipelineLayout
       mainClassName="min-h-screen pt-32 pb-20"
       heroTitle={
-        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet drop-shadow-[0_0_30px_rgba(0,242,255,0.3)]">
-          BPO Excellence
+        <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet">
+          Reliable BPO services that help your business operate better.
         </h1>
       }
       heroDescription={
-        <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-          Transform your operations with our IP-driven Business Process Outsourcing. We combine cognitive talent sourcing with algorithmic workflows to deliver unparalleled efficiency and ROI.
+        <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+          Inkami supports growing businesses with structured BPO solutions including customer support, lead generation, appointment setting, and back-office operations.
         </p>
       }
       stages={bpoStages}

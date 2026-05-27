@@ -26,9 +26,9 @@ export default function ITEducationPage() {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-24"
       >
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">IT <span className="text-hyper-violet">Education</span> Roadmap</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">Practical IT education for students, professionals, and future-ready teams.</h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          Our comprehensive curriculum is designed to transform beginners into global tech leaders. Follow the glowing path to mastery.
+          Inkami offers job-oriented IT education focused on practical skills, guided learning, and real-world confidence.
         </p>
       </motion.div>
 

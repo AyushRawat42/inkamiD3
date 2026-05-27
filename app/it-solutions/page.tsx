@@ -58,13 +58,13 @@ export default function ITSolutionsPage() {
         </div>
       }
       heroTitle={
-        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet drop-shadow-[0_0_30px_rgba(0,242,255,0.3)]">
-          IT Solutions
+        <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-electric-cyan to-hyper-violet">
+          Modern IT services for businesses that need reliable execution.
         </h1>
       }
       heroDescription={
-        <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-          Architecting the future with IP-infused development. We build scalable, secure, and hyper-agile custom software solutions designed for global enterprise dominance.
+        <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+          Inkami builds websites, web applications, integrations, and scalable digital systems for companies that want dependable delivery and future-ready technology.
         </p>
       }
       stages={itStages}
