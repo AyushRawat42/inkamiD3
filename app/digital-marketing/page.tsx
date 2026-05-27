@@ -2,6 +2,7 @@
 
 import { Target, Zap, MousePointerClick, Activity, TrendingUp } from 'lucide-react';
 import { IPPipelineLayout, type PipelineStage } from '@/components/ip-pipeline-layout';
+import { ServiceImage } from '@/components/service-image';
 import {
   marketingAudienceVisualizer,
   marketingCampaignsVisualizer,
@@ -67,6 +68,14 @@ export default function DigitalMarketingPage() {
         <p className="text-lg text-gray-300 mb-8 leading-relaxed">
           Inkami helps businesses build stronger digital presence through strategy, content, paid campaigns, SEO, and conversion-focused execution.
         </p>
+      }
+      heroImage={
+        <ServiceImage
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+          alt="Marketing analytics dashboard used for campaign performance planning"
+          aspect="aspect-[5/4]"
+          priority
+        />
       }
       stages={marketingStages}
       ctaTitle="Ready to Scale Your Growth?"

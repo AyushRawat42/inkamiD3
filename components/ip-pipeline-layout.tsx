@@ -17,6 +17,7 @@ export function IPPipelineLayout({
   background,
   heroTitle,
   heroDescription,
+  heroImage,
   stages,
   ctaTitle,
   ctaDescription,
@@ -28,6 +29,7 @@ export function IPPipelineLayout({
   background?: React.ReactNode;
   heroTitle: React.ReactNode;
   heroDescription: React.ReactNode;
+  heroImage?: React.ReactNode;
   stages: PipelineStage[];
   ctaTitle: React.ReactNode;
   ctaDescription: React.ReactNode;
@@ -67,10 +69,17 @@ export function IPPipelineLayout({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center"
+          className={
+            heroImage
+              ? 'grid items-center gap-10 lg:grid-cols-[1fr_0.82fr]'
+              : 'max-w-4xl mx-auto text-center'
+          }
         >
-          {heroTitle}
-          {heroDescription}
+          <div className={heroImage ? 'text-center lg:text-left' : undefined}>
+            {heroTitle}
+            {heroDescription}
+          </div>
+          {heroImage}
         </motion.div>
       </section>
 

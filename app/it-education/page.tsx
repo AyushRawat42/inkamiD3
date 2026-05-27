@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
+import { ServiceImage } from '@/components/service-image';
 
 const steps = [
   { title: 'Foundations of Code', desc: 'Mastering basic programming, algorithms, and data structures to build a solid technical base.' },
@@ -24,12 +25,20 @@ export default function ITEducationPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-24"
+        className="grid items-center gap-10 mb-24 lg:grid-cols-[1fr_0.82fr]"
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Practical IT education for students, professionals, and future-ready teams.</h1>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          Inkami offers job-oriented IT education focused on practical skills, guided learning, and real-world confidence.
-        </p>
+        <div className="text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Practical IT education for students, professionals, and future-ready teams.</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg lg:mx-0">
+            Inkami offers job-oriented IT education focused on practical skills, guided learning, and real-world confidence.
+          </p>
+        </div>
+        <ServiceImage
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+          alt="Learners working together on computers during practical technology training"
+          aspect="aspect-[5/4]"
+          priority
+        />
       </motion.div>
 
       <div className="relative max-w-4xl mx-auto">

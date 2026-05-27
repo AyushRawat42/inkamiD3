@@ -2,6 +2,7 @@
 
 import { Bot, BrainCircuit, Database, LineChart, Network } from 'lucide-react';
 import { IPPipelineLayout, type PipelineStage } from '@/components/ip-pipeline-layout';
+import { ServiceImage } from '@/components/service-image';
 import {
   bpoTalentVisualizer,
   bpoTrainingVisualizer,
@@ -61,6 +62,14 @@ export default function BPOServicesPage() {
         <p className="text-lg text-gray-300 mb-8 leading-relaxed">
           Inkami supports growing businesses with structured BPO solutions including customer support, lead generation, appointment setting, and back-office operations.
         </p>
+      }
+      heroImage={
+        <ServiceImage
+          src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+          alt="Operations team coordinating customer support and business process workflows"
+          aspect="aspect-[5/4]"
+          priority
+        />
       }
       stages={bpoStages}
       ctaTitle="Ready to Scale Your Operations?"

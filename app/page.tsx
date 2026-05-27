@@ -2,23 +2,32 @@ import Link from 'next/link';
 import { AnimatedValueCards } from '@/components/animated-value-cards';
 import { BusinessProcessScroll } from '@/components/business-process-scroll';
 import { LeadGenBPO } from '@/components/lead-gen-bpo';
+import { ServiceImage } from '@/components/service-image';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero */}
       <section className="relative flex items-center justify-center min-h-screen pt-28 pb-16 bg-deep-space">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-            Growth, operations, technology, and training — delivered by Inkami.
-          </h1>
-          <p className="mb-8 max-w-3xl mx-auto text-lg text-gray-300">
-            Inkami helps businesses scale with BPO services, digital marketing, IT solutions, and IT education designed for practical, measurable impact.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="w-full sm:w-auto rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white shadow-md">Request a Consultation</Link>
-            <Link href="/about" className="w-full sm:w-auto rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Learn About Inkami</Link>
+        <div className="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-[1fr_0.85fr]">
+          <div className="text-center lg:text-left">
+            <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+              Growth, operations, technology, and training — delivered by Inkami.
+            </h1>
+            <p className="mb-8 max-w-3xl mx-auto text-lg text-gray-300 lg:mx-0">
+              Inkami helps businesses scale with BPO services, digital marketing, IT solutions, and IT education designed for practical, measurable impact.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start">
+              <Link href="/contact" className="w-full sm:w-auto rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white shadow-md">Request a Consultation</Link>
+              <Link href="/about" className="w-full sm:w-auto rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Learn About Inkami</Link>
+            </div>
           </div>
+          <ServiceImage
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+            alt="Business team collaborating around a technology strategy session"
+            aspect="aspect-[5/4]"
+            priority
+          />
         </div>
       </section>
 

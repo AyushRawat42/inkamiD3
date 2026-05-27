@@ -73,13 +73,3 @@
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
 }
-
-/* Hide default cursor to use custom cursor */
-@media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-  a, button, input, textarea, select {
-    cursor: none;
-  }
-}

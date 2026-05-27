@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ServiceImage } from '@/components/service-image';
 
 export default function AboutPage() {
   return (
@@ -32,6 +33,12 @@ export default function AboutPage() {
         </div>
 
         <aside className="space-y-8">
+          <ServiceImage
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+            alt="Professional team discussing partnership and delivery planning"
+            aspect="aspect-[16/10]"
+          />
+
           <div className="glass-panel p-8 rounded-3xl border border-white/10">
             <h4 className="font-bold mb-3">Leadership & Team</h4>
             <p className="text-gray-400">Experienced delivery teams with backgrounds in enterprise software, digital growth, and global operations. We pair senior leadership oversight with dedicated execution squads.</p>

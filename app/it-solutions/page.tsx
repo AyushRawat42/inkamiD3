@@ -2,6 +2,7 @@
 
 import { Search, Hexagon, Code2, ShieldCheck, Globe } from 'lucide-react';
 import { IPPipelineLayout, type PipelineStage } from '@/components/ip-pipeline-layout';
+import { ServiceImage } from '@/components/service-image';
 import {
   itDiscoveryVisualizer,
   itMicroservicesVisualizer,
@@ -66,6 +67,14 @@ export default function ITSolutionsPage() {
         <p className="text-lg text-gray-300 mb-8 leading-relaxed">
           Inkami builds websites, web applications, integrations, and scalable digital systems for companies that want dependable delivery and future-ready technology.
         </p>
+      }
+      heroImage={
+        <ServiceImage
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+          alt="Software engineering workspace with code and cloud systems planning"
+          aspect="aspect-[5/4]"
+          priority
+        />
       }
       stages={itStages}
       ctaTitle="Ready to Modernize Your Stack?"
