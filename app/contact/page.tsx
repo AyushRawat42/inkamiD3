@@ -100,7 +100,7 @@ export default function ContactPage() {
               type="submit" 
               className="w-full py-4 rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet font-bold text-white hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] transition-all"
             >
-              Initialize Contact
+              Request Consultation
             </button>
           </motion.form>
         )}

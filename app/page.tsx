@@ -16,8 +16,8 @@ export default function Home() {
             Inkami helps businesses scale with BPO services, digital marketing, IT solutions, and IT education designed for practical, measurable impact.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white shadow-md">Get a Consultation</Link>
-            <Link href="/about" className="rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Learn About Inkami</Link>
+            <Link href="/contact" className="w-full sm:w-auto rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white shadow-md">Request a Consultation</Link>
+            <Link href="/about" className="w-full sm:w-auto rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Learn About Inkami</Link>
           </div>
         </div>
       </section>
@@ -106,9 +106,9 @@ export default function Home() {
         <div className="glass-panel p-10 rounded-3xl border border-white/10 text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to work with Inkami?</h3>
           <p className="text-gray-400 mb-6">Book a free consultation to discuss how we can help your business grow, operate better, and upskill teams.</p>
-          <div className="flex items-center justify-center gap-4">
-            <Link href="/contact" className="rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white">Contact Sales</Link>
-            <Link href="/bpo-services" className="rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Explore Services</Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/contact" className="w-full sm:w-auto rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white">Request Consultation</Link>
+            <Link href="/bpo-services" className="w-full sm:w-auto rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-300">Explore Services</Link>
           </div>
         </div>
       </section>

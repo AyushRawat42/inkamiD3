@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="glass-panel p-8 rounded-3xl border border-white/10 text-center">
             <h4 className="font-bold mb-3">Ready to partner?</h4>
             <p className="text-gray-400 mb-4">If you're ready to improve execution or scale teams, let's talk about a practical plan that delivers.</p>
-            <Link href="/contact" className="rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white inline-block">Contact Us</Link>
+            <Link href="/contact" className="w-full sm:w-auto rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet px-6 py-3 font-bold text-white inline-block">Request a Consultation</Link>
           </div>
         </aside>
       </div>
