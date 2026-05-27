@@ -50,6 +50,16 @@
     overflow-x: hidden;
   }
 
+  select,
+  option {
+    color: #ffffff;
+    background-color: #111111;
+  }
+
+  option {
+    background-color: #111111;
+  }
+
   ::selection {
     background-color: var(--color-hyper-violet);
     color: #fff;
