@@ -41,64 +41,58 @@ export default function ContactPage() {
             onSubmit={handleSubmit} 
             className="glass-panel p-8 md:p-10 rounded-3xl space-y-8 border border-white/10"
           >
-            <div className="relative group">
-              <input 
-                type="text" 
-                id="name" 
-                required 
-                className="block w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-electric-cyan peer" 
-                placeholder=" " 
-              />
-              <label 
-                htmlFor="name" 
-                className="absolute left-0 top-4 text-gray-500 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-electric-cyan peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs"
-              >
-                Full Name
-              </label>
-            </div>
-            <div className="relative group">
-              <input 
-                type="email" 
-                id="email" 
-                required 
-                className="block w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-electric-cyan peer" 
-                placeholder=" " 
-              />
-              <label 
-                htmlFor="email" 
-                className="absolute left-0 top-4 text-gray-500 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-electric-cyan peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs"
-              >
-                Corporate Email
-              </label>
-            </div>
-            <div className="relative group">
-              <label htmlFor="service" className="absolute left-0 top-4 text-gray-500 transition-all text-sm">Select Service</label>
-              <select id="service" name="service" className="mt-6 block w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-electric-cyan">
-                <option value="bpo">BPO Services</option>
-                <option value="marketing">Digital Marketing</option>
-                <option value="it">IT Services</option>
-                <option value="education">IT Education</option>
-                <option value="other">General Inquiry</option>
-              </select>
-            </div>
-            <div className="relative group">
-              <textarea 
-                id="message" 
-                required 
-                rows={4} 
-                className="block w-full bg-transparent border-b border-white/20 py-4 text-white focus:outline-none focus:border-electric-cyan peer resize-none" 
-                placeholder=" " 
-              />
-              <label 
-                htmlFor="message" 
-                className="absolute left-0 top-4 text-gray-500 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-electric-cyan peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs"
-              >
-                How can we scale your operations?
-              </label>
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-300">Full Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  required 
+                  placeholder="Jane Doe"
+                  className="block w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white placeholder:text-gray-500 focus:border-electric-cyan focus:outline-none focus:ring-2 focus:ring-electric-cyan/20"
+                />
+              </div>
+
+              <div className="space-y-3">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-300">Corporate Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  required 
+                  placeholder="name@company.com"
+                  className="block w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white placeholder:text-gray-500 focus:border-electric-cyan focus:outline-none focus:ring-2 focus:ring-electric-cyan/20"
+                />
+              </div>
+
+              <div className="space-y-3">
+                <label htmlFor="service" className="block text-sm font-semibold text-gray-300">Select Service</label>
+                <select 
+                  id="service" 
+                  name="service" 
+                  className="block w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white focus:border-electric-cyan focus:outline-none focus:ring-2 focus:ring-electric-cyan/20"
+                >
+                  <option value="bpo">BPO Services</option>
+                  <option value="marketing">Digital Marketing</option>
+                  <option value="it">IT Services</option>
+                  <option value="education">IT Education</option>
+                  <option value="other">General Inquiry</option>
+                </select>
+              </div>
+
+              <div className="space-y-3">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-300">How can we scale your operations?</label>
+                <textarea 
+                  id="message" 
+                  required 
+                  rows={4} 
+                  placeholder="Tell us about your challenge or project goals"
+                  className="block w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-4 text-white placeholder:text-gray-500 focus:border-electric-cyan focus:outline-none focus:ring-2 focus:ring-electric-cyan/20 resize-none"
+                />
+              </div>
             </div>
             <button 
               type="submit" 
-              className="w-full py-4 rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet font-bold text-white hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] transition-all"
+              className="w-full py-4 rounded-full bg-gradient-to-r from-electric-cyan to-hyper-violet font-bold text-white hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] focus:outline-none focus:ring-2 focus:ring-electric-cyan/30 transition-all"
             >
               Request Consultation
             </button>
