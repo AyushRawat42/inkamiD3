@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import { Code, Headphones, TrendingUp, GraduationCap } from 'lucide-react';
+import { brandColorClassMap } from '@/lib/utils';
 
 const valueCards = [
   {
@@ -76,7 +77,9 @@ export function AnimatedValueCards() {
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-electric-cyan/20 to-hyper-violet/20 blur-2xl transition-all group-hover:scale-150 group-hover:opacity-100 opacity-50" />
               
               <div className="relative z-10 mb-6 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-electric-cyan/10 to-hyper-violet/10 border border-white/10">
-                <card.icon className={`h-8 w-8 text-${card.color} group-hover:animate-pulse`} />
+                <card.icon
+                  className={`h-8 w-8 ${brandColorClassMap[card.color] ?? 'text-electric-cyan'} group-hover:animate-pulse`}
+                />
               </div>
               
               <h3 className="relative z-10 mb-4 text-xl font-bold text-white group-hover:text-electric-cyan transition-colors">

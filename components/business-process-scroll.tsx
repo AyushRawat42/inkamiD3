@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 import { Database, PhoneCall, Globe2 } from 'lucide-react';
+import { brandColorClassMap } from '@/lib/utils';
 
 const processes = [
   {
@@ -80,7 +81,9 @@ export function BusinessProcessScroll() {
                           {process.id}
                         </span>
                         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 border border-white/10 group-hover:border-electric-cyan/50 transition-colors">
-                          <process.icon className={`h-8 w-8 text-${process.color}`} />
+                          <process.icon
+                            className={`h-8 w-8 ${brandColorClassMap[process.color] ?? 'text-electric-cyan'}`}
+                          />
                         </div>
                       </div>
                       
